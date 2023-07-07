@@ -1,0 +1,213 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --navbar-height: 59px;
+}
+/* Navigation Bar: Logo and image */
+#logo {
+    margin: 10px 34px;
+    background-color: white;
+    border-radius: 50px;
+
+}
+#logo img {
+    margin: 1px 35px 0px 35px;
+    height: 50px;
+}
+#companyname {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation Bar */
+#navbar {
+    height: 3.8rem;
+    display: flex;
+    align-items: center;
+    top: 0%;
+    position: sticky;
+
+}
+
+/* Navigation Bar: List Items and its styling */
+#navbar ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    text-decoration: none;
+
+}
+#navbar::before {
+    content: "";
+    background-color: #5bb3e3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -80;
+
+}
+#navbar ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 3px 15px;
+    margin: 0px 8px;
+    border-radius: 20px;
+    color: white;
+}
+#navbar ul li a:hover {
+    color: white;
+    background-color: rgb(63 125 173);
+    cursor: pointer;
+}
+.right {
+    position: absolute; 
+    right: 35px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+/* Button section */
+.btn{
+    color: white;
+    background-color:rgb(63 125 173);
+    padding: 0.4rem;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid white;
+    font-family: 'Roboto', sans-serif;
+}
+.btn:hover{
+    color: black;
+    background-color:white;
+    padding: 0.4rem;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#km {
+    font-size: 1.5rem;
+    padding: 0;
+    width: 170px;
+    height: 50px;
+    background-color: white;
+    color: rgb(41 79 158);
+    border: 3px #294f9e solid;
+    margin: 30px 5px 0px 7px;
+    /* border: 3px red solid; */
+
+}   
+
+#bn {
+    font-size: 1.5rem;
+    width: 30rem;
+    padding: 0;
+    width: 170px;
+    height: 50px;
+    background-color: rgb(41 79 158);
+    color: white;
+    border: 3px #294f9e solid;
+    margin: 12px 5px 0px 7px;
+}
+
+
+
+
+footer{
+    height: 50px;
+    text-align: center;
+    background-color: white;
+    color:black;
+
+}
+.copyrightimg{
+    margin-bottom: 0px;
+    width: 1.4rem; 
+    margin: 2px 10px;
+    cursor: pointer;
+}
+.container1{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'header header header header' 
+    'leftbox rightbox rightbox rightbox'
+    'downbox downbox downbox downbox'
+    'lastbox lastbox lastbox lastbox';
+}
+#header{
+    grid-area: header;
+    margin: auto;
+}
+#leftbox{
+    grid-area: leftbox;
+    /* margin-left: 30%; */
+    margin: auto 30%;
+    padding: 35px 53px 28px 50px;
+
+}
+#rightbox{
+    grid-area: rightbox;
+    margin: 14px 90px 20px 60px;
+}
+#downbox{
+    grid-area: downbox;
+}
+#lastbox{
+    grid-area: lastbox;
+}
+.raw{
+    /* background-color: yellow; */
+    /* border: 3px solid black; */
+    padding: 12px 23px;
+}
+
+.Headline{
+    font-size: 3rem;
+    margin: 2px 2px 12px 2px;
+
+}
+.discripton{
+    padding: 1px 101px 21px 0px;
+    color: rgb(35, 35, 35);
+    font-size: 1.2rem;
+    /* border: green 2px solid; */
+
+    /* margin: 2px 2px 12px 100px; */
+
+
+
+}
+.offers .abcd{
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* border: green 2px solid; */
+    
+
+}
+.quantity{  
+    margin: 20px 0px;
+    /* border: 2px red solid; */
+    
+
+}
+.size{
+    margin: 20px 0px;
+    /* border: 2px red solid; */
+
+}
+.offer{
+
+}
