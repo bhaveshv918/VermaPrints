@@ -1,0 +1,349 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+
+}
+
+
+/* Navigation Bar: Logo and image */
+#logo {
+    margin: 10px 34px;
+    background-color: white;
+    border-radius: 50px;
+
+}
+#logo img {
+    margin: 1px 35px 0px 35px;
+    height: 50px;
+    /* margin: 3px 4px; */
+}
+#companyname {
+    /* height: 50px; */
+    /* left: 10%; */
+    margin-left: 0%;
+    color: white;
+    /* border: 2px red solid; */
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    /* margin: 3px 4px; */
+}
+
+
+/* Navigation Bar */
+#navbar {
+    height: 3.8rem;
+    display: flex;
+    align-items: center;
+    top: 0%;
+    position: sticky;
+
+}
+
+
+/* Navigation Bar: List Items and its styling */
+#navbar ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li {
+    /* color: white; ISKI JARUART KHTM */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar::before {
+    content: "";
+    background-color: #5bb3e3;    /* background-color: black; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -80;
+    /* opacity: 0.4; */
+    /* z-index: -1; YEH DIA HAI UPR KARNE KE LIYE SBHI ITEMS SE */
+
+}
+#navbar ul li a {
+    display: block;
+    padding: 3px 15px;
+    margin: 0px 8px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    /* background-color: red; */
+}
+#navbar ul li a:hover {
+    /* border: 2px solid white; */
+    color: white;
+    background-color: rgb(63 125 173);
+    cursor: pointer;
+    /* padding: 20px 29px; */
+}
+.right {
+    position: absolute; 
+    right: 35px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    /* border: red 2px solid; */
+}
+.btn{
+    /* border: green 5px solid; */
+    color: white;
+    background-color:rgb(63 125 173);
+    padding: 0.4rem;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid white;
+    font-family: 'Roboto', sans-serif;
+}
+.btn:hover{
+    /* border: green 5px solid; */
+    color: black;
+    background-color:white;
+    padding: 0.4rem;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid white;
+    font-family: 'Roboto', sans-serif;
+}
+/* Home section */
+#home {
+    /* border: 4px green solid; */
+    /* display: flex; */
+    flex-direction: column;
+    /* padding: 99px 200px;     */
+    height: 527px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+#home::before {
+    content: "";
+    background: url(5128557.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 650px;
+    width: 100%;
+    top: 0px;
+    /* left: 0px; */
+    z-index: -1;
+    opacity: 0.89;
+}
+
+
+/* Services section */
+#services {
+    margin: 24px;
+    display: flex;
+    text-align: center;  
+}
+#services .box {
+    justify-content: center;
+    width: 30%;
+    padding: 20px 10px;
+    border: 4px solid #294f9e;
+    border-radius: 40px;
+    margin: auto 30px;
+}
+#services .box img {
+    height: 200px;
+    padding: 20px;
+}
+#services .box p {
+    font-size: 1.1rem;
+    color: black;
+    font-weight: bold;
+}
+#km {
+    font-size: 1rem;
+    padding: 0;
+    width: 110px;
+    height: 40px;
+    background-color: white;
+    color: rgb(41 79 158);
+    border: 3px #294f9e solid;
+    margin: 12px 5px 0px 7px;
+}
+#bn {
+    font-size: 0.9rem;
+    padding: 0;
+    width: 110px;
+    height: 40px;
+    background-color: rgb(41 79 158);
+    color: white;
+    border: 3px #294f9e solid;
+    margin: 12px 5px 0px 7px;
+    text-decoration: none;
+}
+#mp {
+    font-size: 1.2rem;
+    padding: 0;
+    width: 170px;
+    /* height: 50px; */
+    background-color: rgb(41 79 158);
+    text-decoration: none;
+    margin: auto;
+    color: white;
+    padding: 20px 2px;
+}
+#service-box {
+    /* background-color: #f39519; */
+    margin: 55px 0px 46px 0px;
+    color: rgb(47, 47, 47);
+    padding: 14px;
+    /* margin: 2px 0px;  */
+    margin-bottom: 20px;
+    /* border-radius: 500px; */
+    /* padding: 0px 301px; */
+    /* margin: 7px 285px; */
+}
+
+
+
+
+/* Client section */
+#clients-section {
+    height: 350px;
+    background-color: grey;
+}
+#clients-section img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    border: 5px solid black;
+    border-radius: 500px;
+    display: block;
+    display: flex;
+}
+#clients-section::before {
+    content: "";
+    position: absolute;
+    background: url(nordwood-themes-Tmz8FThN_BE-unsplash.jpg)no-repeat center -380px/cover;
+    width: 100%;
+    height: 350px;
+    z-index: -1;
+    opacity: 0.9;
+}
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img {
+    height: 84px;
+    /* padding: 30px; */
+}
+.client-items {
+    padding: 34px;
+}
+
+
+/* Utility Classes */
+#home h1 {
+    color: white;
+    /* font-style: italic; */
+    font-family: 'Roboto', sans-serif;
+    /* margin: 50px 50px; */
+    /* border: 2px solid red; */
+}
+#home p {
+    color: black;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 1.2rem;
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 390;
+    position: relative;
+    left: 58px;
+    top: -15px;
+    /* border-radius: 50px; */
+    /* border: black solid 2px; */
+    /* text-decoration: brown; */
+    /* text-decoration-line: black solid 3px; */
+}
+.h-primary {
+
+    /* border: 2px red solid; */
+    color: #f39519;
+    font-size: 4.8rem;
+    padding: 12px 0px 0px 5px;
+    /* display: inline-block; */
+    position: relative;
+    left: 30px;
+    text-align: center;
+
+}
+.h-secondary {
+    color: rgb(41 79 158);
+    /* border: 2px solid black; */
+    /* margin: 20px 20px; */
+    /* padding: 200 20px; */
+    font-size: 2.2rem;
+    padding: 1px;
+    text-align: center;
+}
+.h-secondary:hover {
+    color: rgb(78 74 74);
+    /* text-decoration: underline; */
+    cursor: pointer;
+}
+.h-third {
+    color: black;
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+}
+/* .h-third:hover{
+    color: rgba(54, 54, 54, 0.521);
+    text-decoration: underline;
+    cursor: pointer;
+} */
+
+
+/* Button section */
+#btn {
+    padding: 14px 42px;
+    /* border: 2px solid rgb(35, 33, 33); */
+    background-color: #294f9e;
+    color: white;
+    margin: 40px;
+    font-size: 34px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#color{
+    color: #294f9e;
+    text-decoration: none;
+}
+
+footer{
+    height: 50px;
+    text-align: center;
+    background-color: white;
+    color: black;
+
+}
+.copyrightimg{
+    /* border: 1px red solid; */
+    /* height: 30px; */
+    width: 1.4rem; 
+    margin: 2px 10px;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+    cursor: pointer;
+}
+/* All text Center */
+.center {
+    text-align: center;
+}
